@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Permanent+Marker&display=swap');
+html{
+    /* a cada 1rem será considerado 10px */
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* background-color: #00154F; */
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    width: 70%;
+    /* min-width: 110rem; */
+    margin: auto;
+    position: static;
+}
+header{
+    height: 7rem;
+    background-color: #000E36;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    position: relative;
+    top: -4rem;
+    width: 15rem;
+    height: 15rem;
+}
+.first_page{
+    height: 100vh;
+    min-height: 80rem;
+    display: flex;
+    justify-content: space-around;
+}
+.left_fundo{
+    background-color: #00154F;
+    opacity: 80%;
+    position: absolute;
+    height: 100vh;
+    min-height: 80rem;
+    width: 50%;
+    left: 0;
+    z-index: -1;
+}
+.left{
+    height: 100vh;
+    min-height: 80rem;
+    width: 50%; 
+    display: inline-block;
+}
+.first_page h2{ 
+    color: white;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 4rem;
+    /* margin-left: 5%; */
+}
+.first_page h1{
+    color: #F4AF1B;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 7rem;
+    /* margin-left: 5%; */
+}
+.text_1{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 1.2rem;
+    font-weight: 500;
+    /* margin-left: 5%; */
+    margin-right: 5%;
+    width: 75%;
+}
+.text_2{
+    color: rgba(250, 238, 176, 1);
+    font-size: 2.3rem;
+    font-weight: 400;
+    /* margin-left: 5%; */
+    margin-right: 10%;
+}
+.first_page img{
+    width: 43rem;
+}
+.logo_first_page{
+    /* text-align: center; */
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+.second_page{
+    height: 100vh;
+    min-height: 70rem;
+}
+.second_page img{
+    position: absolute;
+    opacity: 90% ;
+    height: 120vh;
+    min-height: 90rem;
+    width: 100%;
+}
+.fundo{
+    background-image: url(./fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    min-height: 80rem;
+    left: 0;
+    z-index: -2;
+    opacity: 100%;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right h3{
+    font-size: 4rem;
+    width: 70%;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(244, 175, 27, 1);
+}
+.right p{
+    font-size: 2rem;
+    width: 75%;
+    text-align: start;
+    font-weight: 400;
+    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+.form input, button{
+    width: 100%;
+    height: 8rem;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 1rem;
+}
+.form input{
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    background-color: rgba(0, 21, 79, 0.6);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.form input::placeholder{
+    color: white;
+    opacity: 60%;
+}
+.form button{
+    margin-top: 3rem;
+    background-color: rgba(203, 203, 203, 1);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+.form button:hover{
+    background-color: #969696;
+    cursor: pointer;
+}
+.third_page{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+} 
+.logo{
+    width: 200px;
+}
+.third_page h4{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.third_page p{
+    font-size: 1.5rem;
+}
+.fundo2{
+    background-color: #00154F;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}  
+.flex_settings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 500px; */
+}
+.fourth_page{
+    height: 100vh;
+    min-height: 800px;
+}
+.fundo3{
+    background-image: url(./fundo_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 800px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.margin_top{
+    /* margin-top: 5%; */
+}
+.fourth_page h3{
+    color: white;
+    font-size: 7rem;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 5%;
+    font-weight: 700;
+}
+.fourth_page p{
+    color: white;
+    text-indent: 4rem;
+    font-size: 3.7rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-weight: 600;
+}
+.logo_4page{
+    width: 56rem;
+    float: right;
+}
+.five_page{
+    height: 500px;
+    width: 100%;
+    color: white;
+}
+.five_page h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.five_page p{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.first_item2, .second_item2, .third_item2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+/* pagina de compra */
+
+
+.fundo6{
+    background-image: url(./fundo6.1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 80rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.plan_title{
+    padding: 5rem;
+}  
+ .plan_title h1{
+    margin: 0;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+.plans{
+    height: 70rem;
+    display: flex;
+    justify-content: space-between;
+}
+.plan_1{
+    width: 25%;
+    background-color: #00154F;
+}
+.button{
+    text-align: center;
+}
+.plans button{
+    background-color:#F4AF1B;
+    color: white;
+    font-size: 3rem;
+    margin-top: 3rem;
+    width: 70%;
+    text-align: center;
+    border-radius: 25px;
+}
+.plans button:hover{
+    cursor: pointer;
+    background-color: #818181;
+}
+.plan_2{
+    width: 25%;
+    background-color: #00154F;
+}
+.plan_3{
+    width: 25%;
+    background-color: #00154F;
+}
+.Plan_name{
+    text-align: center;
+}
+.Plan_name h1{
+    color: #F4AF1B;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+.Plan_name p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+.Plan_price{
+    text-align: center;
+}
+.Plan_price h1{
+    color: #F4AF1B;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.Plan_price p{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+
+
+
+
